@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Scanner; 
 
 public class MyProgram {
 
@@ -9,13 +10,17 @@ public class MyProgram {
 		return input;
 	}
 	
-	public String arrayLs(ArrayList<String> put) {
-		   String newPut = "A";  
-		if(put.equals("A")) {
-			return newPut;
-		}
-		return "Wrong"; 
+	public String arrayLs(String user) {
+		Scanner sc = new Scanner(System.in); 
+		System.out.print("Skriv in Användarnamn: ");
+		user = sc.nextLine(); 
 		
+		if(user.equals("Slisk")) {
+			return "Välkommen"; 
+		}
+		return "Access denaid"; 
+
+			
 		   
 		
 	}
